@@ -1,73 +1,38 @@
-# AI Waste Recognition System
+# AI-Driven Circular Waste Intelligence System
 
-An intelligent waste classification system using YOLOv8 to identify and categorize waste into three types:
-- 🌱 Biodegradable (cardboard, paper, organic waste)
-- ♻️ Recyclable (glass, metal, plastic)
-- 🗑️ Waste (general trash)
+An intelligent software-based waste management prototype that uses YOLOv8 computer vision to detect objects from waste images and classify them into waste categories such as biodegradable, recyclable, and hazardous.
+
+The system demonstrates how AI-based waste recognition, smart analytics dashboards, and intelligent routing concepts can improve urban waste segregation and collection efficiency for smart cities.
 
 ## Features
 
-- ✅ Real-time waste classification using YOLOv8
-- ✅ Interactive dashboard with metrics and analytics
-- ✅ Beautiful gradient theme
-- ✅ Upload and classify images
-- ✅ Detailed analytics and trends
-- ✅ Environmental impact tracking
-- ✅ Uses TrashNet dataset for training
+- Real-time waste recognition using YOLOv8 object detection
+- Rule-based mapping of detected objects into waste categories
+- Interactive Streamlit dashboard with smart waste metrics
+- Waste analytics visualization and trend insights
+- Simulated smart bin monitoring and route optimization logic
+- Environmental impact awareness and sustainability tracking
+- Optional custom training using TrashNet dataset
 
-## Setup Instructions
+## Prototype Scope
 
-### 1. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+This prototype focuses mainly on the **software intelligence layer** of a smart waste management system, including AI detection, analytics visualization, and decision-support concepts.
 
-### 2. Download Training Data (Optional)
-```bash
-python download_dataset.py
-```
-This downloads the TrashNet dataset from GitHub.
-
-### 3. Train Model (Optional)
-```bash
-python train_model.py
-```
-Trains a custom model on the downloaded dataset.
-
-### 4. Run Dashboard
-```bash
-streamlit run app.py
-```
-
-## How It Works
-
-### Without Training (Default)
-- Uses YOLOv8 object detection model
-- Detects objects in images (bottles, food, etc.)
-- Maps detected objects to waste categories
-- Works immediately without training
-
-### With Training (Optional)
-- Downloads TrashNet dataset (30 images)
-- Trains custom YOLOv8 classification model
-- Better accuracy for waste-specific images
-- Takes 10-30 minutes to train
+Future versions will integrate:
+- Real IoT smart bins
+- Live cloud data streaming
+- Custom trained waste detection models
+- Large-scale smart city deployment
 
 ## Model
 
 Uses YOLOv8 from Ultralytics:
-- **Detection Mode**: Maps COCO objects to waste categories
-- **Classification Mode**: Custom trained on waste images
 
-## Dashboard Pages
+- Detection Mode → Detects objects and maps them to waste categories  
+- Custom Training Mode → Improves waste-specific classification accuracy
 
-1. **Dashboard** - Overview metrics and visualizations
-2. **Classify Waste** - Upload images for classification
-3. **Analytics** - Detailed statistics and insights
+## Dashboard Modules
 
-## Dataset
-
-TrashNet Dataset: https://github.com/garythung/trashnet
-- Real waste images
-- Multiple categories (glass, metal, plastic, cardboard, trash)
-- Pre-resized for training
+- Smart Waste Overview  
+- Waste Classification Interface  
+- Analytics & Sustainability Insights  
